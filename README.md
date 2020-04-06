@@ -3,6 +3,7 @@
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -72,4 +73,32 @@
 <img src="https://i.imgur.com/80SdqOr.png" height = 500>
 <img src="https://i.imgur.com/AoXJudp.png" height = 500>
 <img src="https://i.imgur.com/cS8WG0y.png" height = 500>
+
+### 4. Schema
+
+**Menu Item**
+| Type | Property  | Description  |
+| :-----: | :-: | :-: |
+| Pointer | chef | Points to the chef's specific menu |
+| String  | fooditem | food item |
+| Int | quantity | how many user chooses |
+| Bool | favoriteItem | If its a favorite item on the chef's menu |
+
+## Networking
+* Menu Screen
+   * (Read/Get) Query all menu items
+   ```
+   let query = PFQuery(className:"MENU")
+   query.whereKey("author", equalTo: currentChef)
+   query.findObjectsInBackground { (menuItems: [PFObject]?, error: Error?) in
+      if let error = error { 
+         print(error.localizedDescription)
+      } else if let menuItems = menuItems {
+         print("Successfully retrieved \(menu.count) posts.")
+      }
+   }
+   ```
+   * (Create/Delete) Items in user's cart
+   * (Create/Delete) Chef's menu items
+   * (Update/ Put) When user's paid food items are recieved, being made, and when they are available for pick up
 
