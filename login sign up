@@ -1,0 +1,74 @@
+//
+//  SignUpViewController.swift
+//  Quick Cooks
+//
+//  Created by Chad-Roye on 4/1/20.
+//  Copyright © 2020 Chad-Roye. All rights reserved.
+//
+
+import UIKit
+
+class SignUpViewController: UIViewController {
+
+    @IBOutlet weak var UserFirstNameTextField: UITextField!
+    
+    @IBOutlet weak var UserLastNameTextField: UITextField!
+    
+    @IBOutlet weak var UserEmailTextField: UITextField!
+    
+    @IBOutlet weak var UserPasswordTextField: UITextField!
+    
+    @IBOutlet weak var VerifiedPasswordTextField: UITextField!
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func SignUpButton(_ sender: Any) {
+        
+        let UserFirstName = UserFirstNameTextField.text;
+        let UserLastName = UserLastNameTextField.text;
+        let UserEmail = UserEmailTextField.text;
+        let UserPassword = UserPasswordTextField.text;
+        let UserVerifiedPassword = VerifiedPasswordTextField.text;
+        
+        displayMyAlertMessage ( userMessage: "All Fields Are requierd");
+                   return;
+        
+        displayMyAlertMessage ( userMessage: "Password Do not match");
+                       return;
+
+        // CHECK FOR EMPTY FIELDS
+        if ( UserEmail!.isEmpty || UserPassword!.isEmpty || UserVerifiedPassword!.isEmpty)
+        {
+            //DISPLAY ALERT MESSAGE
+               
+        }
+            
+            // Check IF PASSWORD MATCH
+            if(UserPassword != UserVerifiedPassword)
+            {
+                 // DISPLAY ALERT MESSAGE
+               
+            
+        }
+        // STORE DATE
+        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey:"userEmail");
+        
+        NSUserDefaults.standardUserDefaults().setObject(userPasswords, forKey:"userPassword");        // DISPLAY ALERT MESSAGE WITH CONFIRMATION
+}
+    
+        func displayMyAlertMessage(userMessage:String) {
+    
+            _ = UIAlertController(title:"Alert", message: userMessage, preferredStyle: UIAlertController.Style.alert );
+            
+            let okAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler: nil)
+            
+            MyAlert.addAction(okAction);
+            self.presentViewController(MyAlert, animated:true, completion:nil);
+            
