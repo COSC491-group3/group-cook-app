@@ -15,6 +15,7 @@
 		3CEFD544243E70A20036BC3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */; };
 		3CEFD54F243E70A20036BC3E /* QuickCooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD54E243E70A20036BC3E /* QuickCooksTests.swift */; };
 		3CEFD55A243E70A20036BC3E /* QuickCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */; };
+		3CEFD568243E72C60036BC3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD567243E72C50036BC3E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CEFD555243E70A20036BC3E /* QuickCooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCooksUITests.swift; sourceTree = "<group>"; };
 		3CEFD55B243E70A20036BC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEFD567243E72C50036BC3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3CEFD540243E70A20036BC3E /* Assets.xcassets */,
 				3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */,
 				3CEFD545243E70A20036BC3E /* Info.plist */,
+				3CEFD567243E72C50036BC3E /* LoginViewController.swift */,
 			);
 			path = QuickCooks;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEFD568243E72C60036BC3E /* LoginViewController.swift in Sources */,
 				3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */,
 				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
 				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
