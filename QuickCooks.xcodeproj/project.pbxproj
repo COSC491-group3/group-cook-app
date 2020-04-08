@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD537243E70990036BC3E /* AppDelegate.swift */; };
+		3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD539243E70990036BC3E /* SceneDelegate.swift */; };
+		3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* ViewController.swift */; };
+		3CEFD53F243E70990036BC3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD53D243E70990036BC3E /* Main.storyboard */; };
+		3CEFD541243E70A20036BC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD540243E70A20036BC3E /* Assets.xcassets */; };
+		3CEFD544243E70A20036BC3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */; };
+		3CEFD54F243E70A20036BC3E /* QuickCooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD54E243E70A20036BC3E /* QuickCooksTests.swift */; };
+		3CEFD55A243E70A20036BC3E /* QuickCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEFD54B243E70A20036BC3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEFD52C243E70990036BC3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEFD533243E70990036BC3E;
+			remoteInfo = QuickCooks;
+		};
+		3CEFD556243E70A20036BC3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEFD52C243E70990036BC3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEFD533243E70990036BC3E;
+			remoteInfo = QuickCooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CEFD534243E70990036BC3E /* QuickCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEFD537243E70990036BC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CEFD539243E70990036BC3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CEFD53B243E70990036BC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CEFD53E243E70990036BC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CEFD540243E70A20036BC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CEFD543243E70A20036BC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CEFD545243E70A20036BC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEFD54A243E70A20036BC3E /* QuickCooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEFD54E243E70A20036BC3E /* QuickCooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCooksTests.swift; sourceTree = "<group>"; };
+		3CEFD550243E70A20036BC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEFD555243E70A20036BC3E /* QuickCooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCooksUITests.swift; sourceTree = "<group>"; };
+		3CEFD55B243E70A20036BC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEFD531243E70990036BC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD547243E70A20036BC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD552243E70A20036BC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CEFD52B243E70990036BC3E = {
+			isa = PBXGroup;
+			children = (
+				3CEFD536243E70990036BC3E /* QuickCooks */,
+				3CEFD54D243E70A20036BC3E /* QuickCooksTests */,
+				3CEFD558243E70A20036BC3E /* QuickCooksUITests */,
+				3CEFD535243E70990036BC3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CEFD535243E70990036BC3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEFD534243E70990036BC3E /* QuickCooks.app */,
+				3CEFD54A243E70A20036BC3E /* QuickCooksTests.xctest */,
+				3CEFD555243E70A20036BC3E /* QuickCooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CEFD536243E70990036BC3E /* QuickCooks */ = {
+			isa = PBXGroup;
+			children = (
+				3CEFD537243E70990036BC3E /* AppDelegate.swift */,
+				3CEFD539243E70990036BC3E /* SceneDelegate.swift */,
+				3CEFD53B243E70990036BC3E /* ViewController.swift */,
+				3CEFD53D243E70990036BC3E /* Main.storyboard */,
+				3CEFD540243E70A20036BC3E /* Assets.xcassets */,
+				3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */,
+				3CEFD545243E70A20036BC3E /* Info.plist */,
+			);
+			path = QuickCooks;
+			sourceTree = "<group>";
+		};
+		3CEFD54D243E70A20036BC3E /* QuickCooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEFD54E243E70A20036BC3E /* QuickCooksTests.swift */,
+				3CEFD550243E70A20036BC3E /* Info.plist */,
+			);
+			path = QuickCooksTests;
+			sourceTree = "<group>";
+		};
+		3CEFD558243E70A20036BC3E /* QuickCooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */,
+				3CEFD55B243E70A20036BC3E /* Info.plist */,
+			);
+			path = QuickCooksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CEFD533243E70990036BC3E /* QuickCooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEFD55E243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooks" */;
+			buildPhases = (
+				3CEFD530243E70990036BC3E /* Sources */,
+				3CEFD531243E70990036BC3E /* Frameworks */,
+				3CEFD532243E70990036BC3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCooks;
+			productName = QuickCooks;
+			productReference = 3CEFD534243E70990036BC3E /* QuickCooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CEFD549243E70A20036BC3E /* QuickCooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEFD561243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksTests" */;
+			buildPhases = (
+				3CEFD546243E70A20036BC3E /* Sources */,
+				3CEFD547243E70A20036BC3E /* Frameworks */,
+				3CEFD548243E70A20036BC3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEFD54C243E70A20036BC3E /* PBXTargetDependency */,
+			);
+			name = QuickCooksTests;
+			productName = QuickCooksTests;
+			productReference = 3CEFD54A243E70A20036BC3E /* QuickCooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CEFD554243E70A20036BC3E /* QuickCooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEFD564243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksUITests" */;
+			buildPhases = (
+				3CEFD551243E70A20036BC3E /* Sources */,
+				3CEFD552243E70A20036BC3E /* Frameworks */,
+				3CEFD553243E70A20036BC3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEFD557243E70A20036BC3E /* PBXTargetDependency */,
+			);
+			name = QuickCooksUITests;
+			productName = QuickCooksUITests;
+			productReference = 3CEFD555243E70A20036BC3E /* QuickCooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CEFD52C243E70990036BC3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jada Grant";
+				TargetAttributes = {
+					3CEFD533243E70990036BC3E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					3CEFD549243E70A20036BC3E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 3CEFD533243E70990036BC3E;
+					};
+					3CEFD554243E70A20036BC3E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 3CEFD533243E70990036BC3E;
+					};
+				};
+			};
+			buildConfigurationList = 3CEFD52F243E70990036BC3E /* Build configuration list for PBXProject "QuickCooks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CEFD52B243E70990036BC3E;
+			productRefGroup = 3CEFD535243E70990036BC3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CEFD533243E70990036BC3E /* QuickCooks */,
+				3CEFD549243E70A20036BC3E /* QuickCooksTests */,
+				3CEFD554243E70A20036BC3E /* QuickCooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CEFD532243E70990036BC3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEFD544243E70A20036BC3E /* LaunchScreen.storyboard in Resources */,
+				3CEFD541243E70A20036BC3E /* Assets.xcassets in Resources */,
+				3CEFD53F243E70990036BC3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD548243E70A20036BC3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD553243E70A20036BC3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CEFD530243E70990036BC3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */,
+				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
+				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD546243E70A20036BC3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEFD54F243E70A20036BC3E /* QuickCooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEFD551243E70A20036BC3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEFD55A243E70A20036BC3E /* QuickCooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEFD54C243E70A20036BC3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEFD533243E70990036BC3E /* QuickCooks */;
+			targetProxy = 3CEFD54B243E70A20036BC3E /* PBXContainerItemProxy */;
+		};
+		3CEFD557243E70A20036BC3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEFD533243E70990036BC3E /* QuickCooks */;
+			targetProxy = 3CEFD556243E70A20036BC3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CEFD53D243E70990036BC3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEFD53E243E70990036BC3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEFD543243E70A20036BC3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CEFD55C243E70A30036BC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CEFD55D243E70A30036BC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CEFD55F243E70A30036BC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CEFD560243E70A30036BC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CEFD562243E70A30036BC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickCooks.app/QuickCooks";
+			};
+			name = Debug;
+		};
+		3CEFD563243E70A30036BC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickCooks.app/QuickCooks";
+			};
+			name = Release;
+		};
+		3CEFD565243E70A30036BC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickCooks;
+			};
+			name = Debug;
+		};
+		3CEFD566243E70A30036BC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87DA3GP9A;
+				INFOPLIST_FILE = QuickCooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGrant.QuickCooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickCooks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CEFD52F243E70990036BC3E /* Build configuration list for PBXProject "QuickCooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEFD55C243E70A30036BC3E /* Debug */,
+				3CEFD55D243E70A30036BC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEFD55E243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEFD55F243E70A30036BC3E /* Debug */,
+				3CEFD560243E70A30036BC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEFD561243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEFD562243E70A30036BC3E /* Debug */,
+				3CEFD563243E70A30036BC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEFD564243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEFD565243E70A30036BC3E /* Debug */,
+				3CEFD566243E70A30036BC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CEFD52C243E70990036BC3E /* Project object */;
+}
