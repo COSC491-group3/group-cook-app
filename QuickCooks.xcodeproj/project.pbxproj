@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306BE9B510728EDA0267C8ED /* Pods_QuickCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */; };
 		3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD537243E70990036BC3E /* AppDelegate.swift */; };
 		3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD539243E70990036BC3E /* SceneDelegate.swift */; };
 		3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 		3CEFD54F243E70A20036BC3E /* QuickCooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD54E243E70A20036BC3E /* QuickCooksTests.swift */; };
 		3CEFD55A243E70A20036BC3E /* QuickCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */; };
 		3CEFD568243E72C60036BC3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD567243E72C50036BC3E /* LoginViewController.swift */; };
+		67C9618E2444E99D009E7E04 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9618D2444E99D009E7E04 /* SignUpViewController.swift */; };
+		B9BCFDDA11BA0EF8DA9940EB /* Pods_QuickCooks_QuickCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66749C0532ED2C6894A0DA1 /* Pods_QuickCooks_QuickCooksUITests.framework */; };
+		F6BA35E3785D69F3C78730BD /* Pods_QuickCooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15DD06599520A5FE12F8AFC /* Pods_QuickCooksTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC610917432A3F6C644D792 /* Pods-QuickCooks-QuickCooksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooks-QuickCooksUITests.release.xcconfig"; path = "Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F3649EE802D9F3287E5B80B /* Pods-QuickCooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooksTests.release.xcconfig"; path = "Target Support Files/Pods-QuickCooksTests/Pods-QuickCooksTests.release.xcconfig"; sourceTree = "<group>"; };
+		1ECD09A92C8B3B50DD7BAE15 /* Pods-QuickCooks-QuickCooksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooks-QuickCooksUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD534243E70990036BC3E /* QuickCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD537243E70990036BC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEFD539243E70990036BC3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		3CEFD559243E70A20036BC3E /* QuickCooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCooksUITests.swift; sourceTree = "<group>"; };
 		3CEFD55B243E70A20036BC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEFD567243E72C50036BC3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		67C9618D2444E99D009E7E04 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6C8D6AAA920F0DDF1EEEA961 /* Pods-QuickCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooks.debug.xcconfig"; path = "Target Support Files/Pods-QuickCooks/Pods-QuickCooks.debug.xcconfig"; sourceTree = "<group>"; };
+		6D043C18409128FAC702AA21 /* Pods-QuickCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickCooksTests/Pods-QuickCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A15DD06599520A5FE12F8AFC /* Pods_QuickCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66749C0532ED2C6894A0DA1 /* Pods_QuickCooks_QuickCooksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCooks_QuickCooksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE1AEB87DE89C4DD322A571 /* Pods-QuickCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooks.release.xcconfig"; path = "Target Support Files/Pods-QuickCooks/Pods-QuickCooks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306BE9B510728EDA0267C8ED /* Pods_QuickCooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BA35E3785D69F3C78730BD /* Pods_QuickCooksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BCFDDA11BA0EF8DA9940EB /* Pods_QuickCooks_QuickCooksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				3CEFD54D243E70A20036BC3E /* QuickCooksTests */,
 				3CEFD558243E70A20036BC3E /* QuickCooksUITests */,
 				3CEFD535243E70990036BC3E /* Products */,
+				D72EA7315D27AC18F7065F87 /* Pods */,
+				D997A437D19C29B6B71B16C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +128,7 @@
 				3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */,
 				3CEFD545243E70A20036BC3E /* Info.plist */,
 				3CEFD567243E72C50036BC3E /* LoginViewController.swift */,
+				67C9618D2444E99D009E7E04 /* SignUpViewController.swift */,
 			);
 			path = QuickCooks;
 			sourceTree = "<group>";
@@ -131,6 +151,30 @@
 			path = QuickCooksUITests;
 			sourceTree = "<group>";
 		};
+		D72EA7315D27AC18F7065F87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C8D6AAA920F0DDF1EEEA961 /* Pods-QuickCooks.debug.xcconfig */,
+				FBE1AEB87DE89C4DD322A571 /* Pods-QuickCooks.release.xcconfig */,
+				1ECD09A92C8B3B50DD7BAE15 /* Pods-QuickCooks-QuickCooksUITests.debug.xcconfig */,
+				0DC610917432A3F6C644D792 /* Pods-QuickCooks-QuickCooksUITests.release.xcconfig */,
+				6D043C18409128FAC702AA21 /* Pods-QuickCooksTests.debug.xcconfig */,
+				0F3649EE802D9F3287E5B80B /* Pods-QuickCooksTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D997A437D19C29B6B71B16C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */,
+				D66749C0532ED2C6894A0DA1 /* Pods_QuickCooks_QuickCooksUITests.framework */,
+				A15DD06599520A5FE12F8AFC /* Pods_QuickCooksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CEFD55E243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooks" */;
 			buildPhases = (
+				BBE7BAC3ABCBA5FBFBBF526A /* [CP] Check Pods Manifest.lock */,
 				3CEFD530243E70990036BC3E /* Sources */,
 				3CEFD531243E70990036BC3E /* Frameworks */,
 				3CEFD532243E70990036BC3E /* Resources */,
+				EB52999D263A83BF60ED18AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CEFD561243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksTests" */;
 			buildPhases = (
+				3F10821089C498599EB6AE73 /* [CP] Check Pods Manifest.lock */,
 				3CEFD546243E70A20036BC3E /* Sources */,
 				3CEFD547243E70A20036BC3E /* Frameworks */,
 				3CEFD548243E70A20036BC3E /* Resources */,
@@ -173,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CEFD564243E70A30036BC3E /* Build configuration list for PBXNativeTarget "QuickCooksUITests" */;
 			buildPhases = (
+				B7E752C8D533ECF959C10D21 /* [CP] Check Pods Manifest.lock */,
 				3CEFD551243E70A20036BC3E /* Sources */,
 				3CEFD552243E70A20036BC3E /* Frameworks */,
 				3CEFD553243E70A20036BC3E /* Resources */,
+				C3F19DF75E79F1162E6620DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +306,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F10821089C498599EB6AE73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickCooksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E752C8D533ECF959C10D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickCooks-QuickCooksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBE7BAC3ABCBA5FBFBBF526A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickCooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F19DF75E79F1162E6620DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB52999D263A83BF60ED18AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CEFD530243E70990036BC3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,6 +418,7 @@
 				3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */,
 				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
 				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
+				67C9618E2444E99D009E7E04 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +589,7 @@
 		};
 		3CEFD55F243E70A30036BC3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8D6AAA920F0DDF1EEEA961 /* Pods-QuickCooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +608,7 @@
 		};
 		3CEFD560243E70A30036BC3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE1AEB87DE89C4DD322A571 /* Pods-QuickCooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +627,7 @@
 		};
 		3CEFD562243E70A30036BC3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D043C18409128FAC702AA21 /* Pods-QuickCooksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +650,7 @@
 		};
 		3CEFD563243E70A30036BC3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3649EE802D9F3287E5B80B /* Pods-QuickCooksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +673,7 @@
 		};
 		3CEFD565243E70A30036BC3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECD09A92C8B3B50DD7BAE15 /* Pods-QuickCooks-QuickCooksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +694,7 @@
 		};
 		3CEFD566243E70A30036BC3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC610917432A3F6C644D792 /* Pods-QuickCooks-QuickCooksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
