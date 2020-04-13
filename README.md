@@ -19,7 +19,7 @@
 ## Product Spec
 
 ### Required Must Have Stories
-* Login/Signup - different for the customer and the chef
+[x] Login/Signup - different for the customer and the chef
     * customer sign up: name, age, email, phone number, address
     * chef: name, age, email, phone number, place of business, create their menu
 * User can view different chefs and what their menu offers
