@@ -1,0 +1,6 @@
+framework module Pods_QuickCooks_QuickCooksUITests {
+  umbrella header "Pods-QuickCooks-QuickCooksUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
