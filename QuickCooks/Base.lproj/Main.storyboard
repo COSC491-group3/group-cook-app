@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FeA-bZ-Sch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FeA-bZ-Sch">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,6 +62,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ano-f6-qyP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkX-n9-IaA">
                                 <rect key="frame" x="253" y="590" width="81" height="41"/>
@@ -73,7 +76,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onSighUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NR-JX-adA"/>
-                                    <segue destination="s9i-dl-4NR" kind="show" id="Bb4-76-D2b"/>
+                                    <segue destination="s9i-dl-4NR" kind="show" identifier="signupSegue" id="Bb4-76-D2b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +87,7 @@
                     <connections>
                         <outlet property="PasswordTextField" destination="4mk-bQ-VGc" id="x4d-tc-Wfl"/>
                         <outlet property="UserNameTextField" destination="YQR-YQ-1ba" id="0J8-EP-4zr"/>
+                        <segue destination="lOf-H2-iDO" kind="showDetail" identifier="loginSegue" id="cLt-1o-A7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
