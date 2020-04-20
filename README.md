@@ -19,9 +19,10 @@
 ## Product Spec
 
 ### Required Must Have Stories
-[x] Login/Signup - different for the customer and the chef
+[X] Login/Signup - different for the customer and the chef
     * customer sign up: name, age, email, phone number, address
     * chef: name, age, email, phone number, place of business, create their menu
+[X] A Map feature that allows users to see their location
 * User can view different chefs and what their menu offers
 * User can select their favorite chefs
 * User can order food, select and deselect items, create a payment method
@@ -102,3 +103,7 @@
    * (Create/Delete) Chef's menu items
    * (Update/ Put) When user's paid food items are recieved, being made, and when they are available for pick up
 
+## Updates
+
+Here is a walkthrough of what we have so far
+http://g.recordit.co/F3HCbLVfZK.gif
