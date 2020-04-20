@@ -106,4 +106,5 @@
 ## Updates
 
 Here is a walkthrough of what we have so far
-http://g.recordit.co/F3HCbLVfZK.gif
+<img src='http://g.recordit.co/F3HCbLVfZK.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
