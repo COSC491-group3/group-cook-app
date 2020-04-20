@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://young-everglades-56594.herokuapp.com/parse"
             })
         )
+        
+        GMSServices.provideAPIKey("AIzaSyBqg-9YGgmmHjCTG7mfCqYh5YlqBzezN7E")
+        
         return true
     }
 

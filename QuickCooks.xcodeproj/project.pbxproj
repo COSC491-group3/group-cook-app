@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		306BE9B510728EDA0267C8ED /* Pods_QuickCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */; };
 		3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD537243E70990036BC3E /* AppDelegate.swift */; };
 		3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD539243E70990036BC3E /* SceneDelegate.swift */; };
-		3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* ViewController.swift */; };
+		3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* HomeViewController.swift */; };
 		3CEFD53F243E70990036BC3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD53D243E70990036BC3E /* Main.storyboard */; };
 		3CEFD541243E70A20036BC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD540243E70A20036BC3E /* Assets.xcassets */; };
 		3CEFD544243E70A20036BC3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		3CEFD534243E70990036BC3E /* QuickCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD537243E70990036BC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEFD539243E70990036BC3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3CEFD53B243E70990036BC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CEFD53B243E70990036BC3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3CEFD53E243E70990036BC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CEFD540243E70A20036BC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CEFD543243E70A20036BC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			children = (
 				3CEFD537243E70990036BC3E /* AppDelegate.swift */,
 				3CEFD539243E70990036BC3E /* SceneDelegate.swift */,
-				3CEFD53B243E70990036BC3E /* ViewController.swift */,
+				3CEFD53B243E70990036BC3E /* HomeViewController.swift */,
 				3CEFD53D243E70990036BC3E /* Main.storyboard */,
 				3CEFD540243E70A20036BC3E /* Assets.xcassets */,
 				3CEFD542243E70A20036BC3E /* LaunchScreen.storyboard */,
@@ -161,7 +161,6 @@
 				6D043C18409128FAC702AA21 /* Pods-QuickCooksTests.debug.xcconfig */,
 				0F3649EE802D9F3287E5B80B /* Pods-QuickCooksTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,6 +186,7 @@
 				3CEFD531243E70990036BC3E /* Frameworks */,
 				3CEFD532243E70990036BC3E /* Resources */,
 				EB52999D263A83BF60ED18AF /* [CP] Embed Pods Frameworks */,
+				E971D9CB91D15058729C39DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +225,7 @@
 				3CEFD552243E70A20036BC3E /* Frameworks */,
 				3CEFD553243E70A20036BC3E /* Resources */,
 				C3F19DF75E79F1162E6620DC /* [CP] Embed Pods Frameworks */,
+				6C92E169CDC66EC4906ECCFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +330,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C92E169CDC66EC4906ECCFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7E752C8D533ECF959C10D21 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +408,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E971D9CB91D15058729C39DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCooks/Pods-QuickCooks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EB52999D263A83BF60ED18AF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,7 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEFD568243E72C60036BC3E /* LoginViewController.swift in Sources */,
-				3CEFD53C243E70990036BC3E /* ViewController.swift in Sources */,
+				3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */,
 				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
 				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
 				67C9618E2444E99D009E7E04 /* SignUpViewController.swift in Sources */,

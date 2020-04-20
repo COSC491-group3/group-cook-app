@@ -13,12 +13,21 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var UserFirstNameTextField: UITextField!
     @IBOutlet weak var LastNameTextField: UITextField!
     @IBOutlet weak var UserEmailTextField: UITextField!
+    @IBOutlet weak var userPhone: UITextField!
+    @IBOutlet weak var userAddress: UITextField!
+    @IBOutlet weak var userZip: UITextField!
+    @IBOutlet weak var userCity: UITextField!
+    @IBOutlet weak var userState: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+   
+    @IBAction func onSgnBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "signUpToHomeSegue", sender: nil)
+    }
     
     
 

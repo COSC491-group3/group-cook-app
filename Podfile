@@ -7,6 +7,7 @@ target 'QuickCooks' do
 
   # Pods for QuickCooks
   pod "Parse"
+  pod 'GoogleMaps'
 
   target 'QuickCooksTests' do
     inherit! :search_paths

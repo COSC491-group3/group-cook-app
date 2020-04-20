@@ -102,10 +102,29 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="dZU-0F-93D" kind="relationship" relationship="rootViewController" id="zt2-gS-ygr"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="len-yp-E5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="950.72463768115949" y="-196.20535714285714"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="dNP-EG-918">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dZU-0F-93D" customClass="HomeViewController" customModule="QuickCooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gi0-yB-xLG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mZ0-tt-8jD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eHx-Wj-8dX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IF-RN-OcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-196"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="5mw-pc-YOJ">
@@ -259,6 +278,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSgnBtn:" destination="s9i-dl-4NR" eventType="touchUpInside" id="u7S-q6-DRi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -269,12 +291,18 @@
                         <outlet property="LastNameTextField" destination="b7u-r8-Ooi" id="EI4-wM-obI"/>
                         <outlet property="UserEmailTextField" destination="jNs-ZS-q7H" id="MJo-QV-KjN"/>
                         <outlet property="UserFirstNameTextField" destination="igt-Z9-1gl" id="mzV-wt-T9W"/>
+                        <outlet property="userAddress" destination="2fB-9f-9Ml" id="4XJ-Dy-gg5"/>
+                        <outlet property="userCity" destination="1FH-hr-UOT" id="w0b-0y-JbD"/>
+                        <outlet property="userPhone" destination="6d5-XB-wQX" id="cl3-PO-BIY"/>
+                        <outlet property="userState" destination="kme-EE-aZN" id="8wX-8Z-6yN"/>
+                        <outlet property="userZip" destination="W1T-I4-lYy" id="eNV-Hx-GDq"/>
+                        <segue destination="lOf-H2-iDO" kind="showDetail" identifier="signUpToHomeSegue" id="eyf-3N-HlY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T55-nu-cn7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SDg-3w-4Dn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="100" y="586"/>
+            <point key="canvasLocation" x="100" y="689"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V7a-GE-Q6m">
@@ -295,4 +323,7 @@
             <point key="canvasLocation" x="-810.14492753623199" y="-195.53571428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eyf-3N-HlY"/>
+    </inferredMetricsTieBreakers>
 </document>
