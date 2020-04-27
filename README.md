@@ -23,6 +23,7 @@
     * customer sign up: name, age, email, phone number, address
     * chef: name, age, email, phone number, place of business, create their menu
 [X] A Map feature that allows users to see their location
+[X] User can click marker which takes them to the chef's page
 * User can view different chefs and what their menu offers
 * User can select their favorite chefs
 * User can order food, select and deselect items, create a payment method
@@ -107,4 +108,6 @@
 
 Here is a walkthrough of what we have so far
 <img src='http://g.recordit.co/F3HCbLVfZK.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/JpWmLWipy0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
