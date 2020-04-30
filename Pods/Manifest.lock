@@ -5,6 +5,7 @@ PODS:
   - GoogleMaps/Base (3.8.0)
   - GoogleMaps/Maps (3.8.0):
     - GoogleMaps/Base
+  - MapboxGeocoder.swift (0.12.0)
   - Parse (1.17.3):
     - Parse/Core (= 1.17.3)
   - Parse/Core (1.17.3):
@@ -12,19 +13,22 @@ PODS:
 
 DEPENDENCIES:
   - GoogleMaps
+  - MapboxGeocoder.swift (~> 0.12)
   - Parse
 
 SPEC REPOS:
   trunk:
     - Bolts
     - GoogleMaps
+    - MapboxGeocoder.swift
     - Parse
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  MapboxGeocoder.swift: e8ca1fcdfb8f674cad390569199dccf3d807ff77
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
 
-PODFILE CHECKSUM: 5641d4097808abef40fc58d8910c442e3360a4b2
+PODFILE CHECKSUM: de247e7ae17c19e900ef6aa6d1b73ec648f04203
 
 COCOAPODS: 1.8.4

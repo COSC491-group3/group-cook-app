@@ -8,6 +8,7 @@ target 'QuickCooks' do
   # Pods for QuickCooks
   pod "Parse"
   pod 'GoogleMaps'
+  pod 'MapboxGeocoder.swift', '~> 0.12'
 
   target 'QuickCooksTests' do
     inherit! :search_paths
