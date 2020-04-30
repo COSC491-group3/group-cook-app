@@ -8,11 +8,14 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
-class HomeViewController: UIViewController, GMSMapViewDelegate {
+class HomeViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
     
     var mapView = GMSMapView()
     let marker = GMSMarker()
+    var locationManager = CLLocationManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +23,15 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
         // Do any additional setup after loading the view.
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+       let camera = GMSCameraPosition.camera(withLatitude: 39.3474102, longitude: -76.5881976, zoom: 7)
         mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-        self.view.addSubview(mapView)
-
-        // Creates a marker in the center of the map.
+        self.view = mapView
+        mapView.isMyLocationEnabled = true
         
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-        mapView.delegate = self
+        self.mapView.delegate = self
+        self.locationManager.delegate = self
+        self.locationManager.stopUpdatingLocation()
+    
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
@@ -39,7 +40,18 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
         return true
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
+        let location = locations.last
 
+        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+
+        self.mapView.animate(to: camera)
+
+        //Finally stop updating location otherwise it will come again and again in this delegate
+        self.locationManager.stopUpdatingLocation()
+
+    }
+    
 }
 
