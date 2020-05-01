@@ -23,7 +23,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     var user = PFUser()
-    
+    var chefPressed = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,32 +51,36 @@ class SignUpViewController: UIViewController {
                 print("Error: \(error?.localizedDescription)")
             }
         }
-    }
-    
-    
-    @IBAction func userOrChefPressed(_ sender: UISegmentedControl) {
-        switch segmentedControl.selectedSegmentIndex{
-        case 0:
-
+        if(chefPressed){
+            print("inside if chefPressed")
             let chef = PFObject(className: "Chefs")
             chef["firstname"] = UserFirstNameTextField.text
             chef["lastname"] = LastNameTextField.text
             chef["address"] = userAddress.text
-            chef["pnumber"] = userPhone.text
-            chef["zipcode"] = userZip.text
+            chef["pnumber"] = Int(userPhone.text!) ?? 0
+            chef["zipcode"] = Int(userZip.text!) ?? 0
             chef["city"] = userCity.text
             chef["state"] = userState.text
-            
+                       
             chef.saveInBackground { (success, error) in
                 if(success){
-                    print("success")
-                }
+                   print("success")
+                           }
                 else{
-                    print("error saving chef")
+                  print("error saving chef")
                 }
-            }
-            
-        case 1: print("regular user")
+             }
+        }
+    }
+    
+    @IBAction func userOrChefPressed(_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex{
+        case 0:
+            chefPressed = true
+            print(chefPressed)
+        case 1:
+            chefPressed = false
+            print(chefPressed)
         default:
             break
         }

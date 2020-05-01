@@ -65,6 +65,7 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, CLLocationManage
             for chef in chefs!{
                 let address = "\(String(describing: chef["address"])),\(String(describing: chef["city"])),\(String(describing: chef["state"])) \(String(describing: chef["zipcode"]))"
                 
+                print(address)
                 let options = ForwardGeocodeOptions(query: address)
                 
                 let task = self.geocoder.geocode(options) { (placemarks, attribution, error) in
@@ -76,6 +77,7 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, CLLocationManage
                     let name = "\(chef["firstname"] as! String) \(chef["lastname"] as! String)"
                     
                     marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+                    print(marker.position)
                     marker.title = name
                     marker.map = self.mapView
                 }
