@@ -189,7 +189,7 @@
                                 <rect key="frame" x="20" y="88" width="374" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="107" id="Ybb-KK-d3m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemTableViewCell" rowHeight="107" id="Ybb-KK-d3m" customClass="MenuItemTableViewCell" customModule="QuickCooks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ybb-KK-d3m" id="kXF-90-R0Y">
@@ -219,6 +219,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemDesription" destination="aDg-xV-X8b" id="rB2-p8-6Hg"/>
+                                            <outlet property="itemPrice" destination="0r7-Ly-teS" id="525-fE-kYU"/>
+                                            <outlet property="menuItem" destination="U3F-cq-f46" id="4Ed-jk-98j"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

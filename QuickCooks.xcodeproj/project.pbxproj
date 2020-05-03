@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		306BE9B510728EDA0267C8ED /* Pods_QuickCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */; };
 		3CC040EF2456870E00ED21EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC040EE2456870E00ED21EB /* MenuViewController.swift */; };
+		3CEA720C245C81DE0021FCA4 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */; };
 		3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD537243E70990036BC3E /* AppDelegate.swift */; };
 		3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD539243E70990036BC3E /* SceneDelegate.swift */; };
 		3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* HomeViewController.swift */; };
@@ -46,6 +47,7 @@
 		1ECD09A92C8B3B50DD7BAE15 /* Pods-QuickCooks-QuickCooksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCooks-QuickCooksUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuickCooks-QuickCooksUITests/Pods-QuickCooks-QuickCooksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC040EE2456870E00ED21EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		3CEFD534243E70990036BC3E /* QuickCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD537243E70990036BC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEFD539243E70990036BC3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				3CEFD567243E72C50036BC3E /* LoginViewController.swift */,
 				67C9618D2444E99D009E7E04 /* SignUpViewController.swift */,
 				3CC040EE2456870E00ED21EB /* MenuViewController.swift */,
+				3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */,
 			);
 			path = QuickCooks;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				3CC040EF2456870E00ED21EB /* MenuViewController.swift in Sources */,
 				3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */,
 				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
+				3CEA720C245C81DE0021FCA4 /* MenuItemTableViewCell.swift in Sources */,
 				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
 				67C9618E2444E99D009E7E04 /* SignUpViewController.swift in Sources */,
 			);
