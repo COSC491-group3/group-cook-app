@@ -11,7 +11,6 @@ import UIKit
 class MenuItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var menuItem: UILabel!
-    @IBOutlet weak var itemDesription: UILabel!
     @IBOutlet weak var itemPrice: UILabel!
     
     override func awakeFromNib() {

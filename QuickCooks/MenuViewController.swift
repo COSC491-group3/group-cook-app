@@ -13,40 +13,49 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     @IBOutlet weak var tableView: UITableView!
-    var chefSelected = PFObject(className: "Chefs")
-    var menuItems = [PFObject]()
+    @IBOutlet weak var chefName: UILabel!
+    @IBOutlet weak var chefCuisine: UILabel!
+    @IBOutlet weak var chefAddress: UILabel!
+    
+    var chefSelected: PFObject?
+    var chefMenuItems = [PFObject]()
+    var name: String!
+    var address: String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("MENU VC")
+        self.chefName.text = name
+        self.chefAddress.text = address
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        
-        print(chefSelected)
+    }
+    override func viewDidAppear(_ animated: Bool) {
         let query = PFQuery(className: "Menu")
+        query.whereKey("chef", equalTo: chefSelected!)
         query.findObjectsInBackground { (menuItems, error) in
             if menuItems != nil{
-                self.menuItems = menuItems!
+                self.chefMenuItems = menuItems!
                 self.tableView.reloadData()
+                print(self.chefMenuItems)
             }
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(menuItems.count);
-        return menuItems.count;
+        print(chefMenuItems.count)
+        return chefMenuItems.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = menuItems[indexPath.section]
-        
+        let item = chefMenuItems[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItemTableViewCell") as! MenuItemTableViewCell
         
         cell.menuItem.text = item["item"] as? String
-        cell.itemDesription.text = item["description"] as? String
-        cell.itemPrice.text = item["price"] as? String
-        
+        cell.itemPrice.text = "$\(item["price"] as? String)"
         return cell
     }
     /*

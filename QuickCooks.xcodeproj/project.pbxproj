@@ -10,6 +10,11 @@
 		306BE9B510728EDA0267C8ED /* Pods_QuickCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */; };
 		3CC040EF2456870E00ED21EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC040EE2456870E00ED21EB /* MenuViewController.swift */; };
 		3CEA720C245C81DE0021FCA4 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */; };
+		3CEA720E2460F6510021FCA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA720D2460F6510021FCA4 /* DetailViewController.swift */; };
+		3CEA72102460F6760021FCA4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA720F2460F6760021FCA4 /* CartViewController.swift */; };
+		3CEA72122460F6C40021FCA4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA72112460F6C40021FCA4 /* SearchViewController.swift */; };
+		3CEA72142460F6F60021FCA4 /* PastOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA72132460F6F50021FCA4 /* PastOrderViewController.swift */; };
+		3CEA72162460F70F0021FCA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA72152460F70F0021FCA4 /* ProfileViewController.swift */; };
 		3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD537243E70990036BC3E /* AppDelegate.swift */; };
 		3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD539243E70990036BC3E /* SceneDelegate.swift */; };
 		3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFD53B243E70990036BC3E /* HomeViewController.swift */; };
@@ -48,6 +53,11 @@
 		217F3803ECFEF88CFC60F484 /* Pods_QuickCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC040EE2456870E00ED21EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		3CEA720D2460F6510021FCA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3CEA720F2460F6760021FCA4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		3CEA72112460F6C40021FCA4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3CEA72132460F6F50021FCA4 /* PastOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrderViewController.swift; sourceTree = "<group>"; };
+		3CEA72152460F70F0021FCA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3CEFD534243E70990036BC3E /* QuickCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEFD537243E70990036BC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEFD539243E70990036BC3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +145,11 @@
 				67C9618D2444E99D009E7E04 /* SignUpViewController.swift */,
 				3CC040EE2456870E00ED21EB /* MenuViewController.swift */,
 				3CEA720B245C81DE0021FCA4 /* MenuItemTableViewCell.swift */,
+				3CEA720D2460F6510021FCA4 /* DetailViewController.swift */,
+				3CEA720F2460F6760021FCA4 /* CartViewController.swift */,
+				3CEA72112460F6C40021FCA4 /* SearchViewController.swift */,
+				3CEA72132460F6F50021FCA4 /* PastOrderViewController.swift */,
+				3CEA72152460F70F0021FCA4 /* ProfileViewController.swift */,
 			);
 			path = QuickCooks;
 			sourceTree = "<group>";
@@ -455,13 +470,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEA72142460F6F60021FCA4 /* PastOrderViewController.swift in Sources */,
+				3CEA72122460F6C40021FCA4 /* SearchViewController.swift in Sources */,
 				3CEFD568243E72C60036BC3E /* LoginViewController.swift in Sources */,
 				3CC040EF2456870E00ED21EB /* MenuViewController.swift in Sources */,
 				3CEFD53C243E70990036BC3E /* HomeViewController.swift in Sources */,
 				3CEFD538243E70990036BC3E /* AppDelegate.swift in Sources */,
+				3CEA72162460F70F0021FCA4 /* ProfileViewController.swift in Sources */,
 				3CEA720C245C81DE0021FCA4 /* MenuItemTableViewCell.swift in Sources */,
 				3CEFD53A243E70990036BC3E /* SceneDelegate.swift in Sources */,
 				67C9618E2444E99D009E7E04 /* SignUpViewController.swift in Sources */,
+				3CEA72102460F6760021FCA4 /* CartViewController.swift in Sources */,
+				3CEA720E2460F6510021FCA4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

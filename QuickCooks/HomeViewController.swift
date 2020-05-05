@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, CLLocationManage
     let geocoder = Geocoder(accessToken: "pk.eyJ1IjoiamFncmEyNyIsImEiOiJjazluNjF2aW8wMjQ5M2dsb2s4Yml3N3V3In0.EvZJ4qe_DzaBL72iUiqdRw")
     var chefs = [PFObject]()
     var selectedChef = PFObject(className: "Chefs")
-    var isSelected = false
+    var markerSnippet: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,16 +37,20 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, CLLocationManage
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        let menuVC = MenuViewController()
+        markerSnippet = marker.snippet!
+        self.performSegue(withIdentifier: "toMenuSegue", sender: self)
+        return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let menuVC = segue.destination as! MenuViewController
         for chef in chefs{
-            if(chef["address"] as! String == marker.snippet!){
-                selectedChef = chef
-                menuVC.chefSelected = selectedChef
+            if(chef["address"] as! String == markerSnippet){
+                menuVC.chefSelected = chef
+                menuVC.address = chef["address"] as! String
+                menuVC.name = "\(chef["firstname"] as! String) \(chef["lastname"] as! String)"
             }
         }
-        print(menuVC.chefSelected)
-        self.performSegue(withIdentifier: "toMenuSegue", sender: nil)
-        return true
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
