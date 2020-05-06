@@ -55,8 +55,23 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItemTableViewCell") as! MenuItemTableViewCell
         
         cell.menuItem.text = item["item"] as? String
-        cell.itemPrice.text = "$\(item["price"] as? String)"
+        cell.itemPrice.text = "$\(item["price"] as! String)"
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "menuToDetailSegue" {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+            let foodItem = chefMenuItems[indexPath.row]
+            
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.foodItem = foodItem
+            detailViewController.name = name
+            detailViewController.address = address
+            
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     /*
     // MARK: - Navigation
