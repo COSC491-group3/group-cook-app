@@ -1,4 +1,4 @@
-# UberCooks *probably will have to change name * 
+# Quick Cooks * 
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
@@ -24,16 +24,11 @@
     * chef: name, age, email, phone number, place of business, create their menu
 [X] A Map feature that allows users to see their location
 [X] User can click marker which takes them to the chef's page
-* User can view different chefs and what their menu offers
-* User can select their favorite chefs
-* User can order food, select and deselect items, create a payment method
-* Chef should be able to toggle certain criteria/tags
-    * food, delivery (pick up or drop off), money rating, we will think of some as we go, a star rating for each menu item
-* User can track their ordered items
-    * ex: They can get a notification saying that the chef sees their order, it's being prepared, it is available to either a) delievered or b) be picked up at the desired location
-* Search filter 
-    * Can include mile radius, location, food type
-* User/Chef Profile [database] 
+[x] User can view different chefs and what their menu offers
+[x] User can select their favorite chefs
+[x] User can order food, select and deselect items, create a payment method
+[x]Search filter 
+[x] User/Chef Profile [database] 
     * Save payment, past orders, any other info they want they want to include
     * Chef should be able to edit their menu
 
@@ -41,6 +36,10 @@
 
 * A map feature in order to track food/delivery
 * Rewards system, based on how many orders the can have a food coupon
+* Chef should be able to toggle certain criteria/tags
+    * food, delivery (pick up or drop off), money rating, we will think of some as we go, a star rating for each menu item
+* User can track their ordered items
+    * ex: They can get a notification saying that the chef sees their order, it's being prepared, it is available to either a) delievered or b) be picked up at the desired location
 ### 2. Screen Archetypes
 
 * Login 
@@ -109,5 +108,7 @@
 Here is a walkthrough of what we have so far
 <img src='http://g.recordit.co/F3HCbLVfZK.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/JpWmLWipy0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/yowPnFSLym.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 
